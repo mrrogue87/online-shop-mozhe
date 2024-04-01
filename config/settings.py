@@ -43,8 +43,8 @@ INSTALLED_APPS = [
     'allauth.account',
     
     # my app
-    'accounts'
-    
+    'accounts',
+    'products',
 ]
 
 # all auth setting
