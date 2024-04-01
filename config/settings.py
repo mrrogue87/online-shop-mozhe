@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     # my app
     'accounts',
     'products',
+    'pages',
 ]
 
 # all auth setting
