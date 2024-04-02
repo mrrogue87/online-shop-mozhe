@@ -28,3 +28,16 @@ class HomePageDetailView(generic.DetailView):
             'proudct_popularity':proudct_popularity,
             'proudct_all':proudct_all
         }
+        
+    
+    
+    
+
+class CategoryListView(generic.ListView):
+        model = Category
+        template_name = "pages/category_list.html"
+        context_object_name = 'category'
+        
+        def get_queryset(self, **kwargs) :
+            category_id = self.kwargs.get('pk')
+            return Product.objects.filter(category=category_id)
